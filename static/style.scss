@@ -1,0 +1,82 @@
+//Color variables
+$primary-color: black;
+$primary-hover-color: rgb(236, 125, 255);
+$success-color: rgb(201, 42, 207);
+$success-hover-color: rgb(130, 13, 134);
+$title-color: rgb(255, 255, 255);
+$bg_color: black;
+
+body {
+    background-color: $bg_color;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:larger;
+    margin:0;
+    padding: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin:50px auto;
+    padding: 20px;
+    background-color: rgb(255, 166, 245);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(129, 241, 249);
+    text-align: center;
+
+    h1 {
+        color: rgb(121, 227, 235);
+    }
+
+    h3 {
+        color: rgb(121, 227, 235);
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+
+        th,td {
+            padding: 10px;
+            border: 1px solid $success-color;
+
+            th{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 28px;
+        background-color: $primary-color;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: rgb(121, 227, 235);
+            color: black;
+        }
+    }
+
+    input {
+        padding: 10px;
+        margin: 5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+    #btn_add {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(121, 227, 235);
+            color: black;
+        }
+    }
+}
